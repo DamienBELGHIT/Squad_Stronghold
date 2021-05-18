@@ -10257,7 +10257,7 @@ window["cr_setSuspended"] = function(s)
 			this.is_else_block = (this.conditions[0].type == null && this.conditions[0].func == cr.system_object.prototype.cnds.Else);
 		}
 	};
-	window["_c2hh_"] = "A86F75940848D51CEDC771FDE2F78D9A1EC3FF8D";
+	window["_c2hh_"] = "CB0856C393E972470D20D9B6B5EFF4C9303BECD4";
 	EventBlock.prototype.postInit = function (hasElse/*, prevBlock_*/)
 	{
 		var i, len;
@@ -28907,21 +28907,21 @@ cr.behaviors.solid = function(runtime)
 }());
 cr.getObjectRefTable = function () { return [
 	cr.plugins_.Arr,
-	cr.plugins_.Browser,
 	cr.plugins_.Audio,
-	cr.plugins_.Function,
+	cr.plugins_.Browser,
 	cr.plugins_.LocalStorage,
 	cr.plugins_.Mouse,
 	cr.plugins_.Particles,
+	cr.plugins_.Function,
 	cr.plugins_.Keyboard,
 	cr.plugins_.Photon,
-	cr.plugins_.sliderbar,
-	cr.plugins_.PhotonChat,
-	cr.plugins_.Text,
-	cr.plugins_.Sprite,
 	cr.plugins_.TiledBg,
 	cr.plugins_.TextBox,
+	cr.plugins_.PhotonChat,
+	cr.plugins_.Sprite,
 	cr.plugins_.rex_bbcodeText,
+	cr.plugins_.Text,
+	cr.plugins_.sliderbar,
 	cr.behaviors.Fade,
 	cr.behaviors.Pin,
 	cr.behaviors.Bullet,
@@ -29102,6 +29102,7 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Arr.prototype.acts.SetXY,
 	cr.plugins_.Sprite.prototype.acts.SetFlipped,
 	cr.system_object.prototype.acts.Scroll,
+	cr.plugins_.Sprite.prototype.cnds.CompareY,
 	cr.plugins_.Sprite.prototype.cnds.PickDistance,
 	cr.plugins_.Keyboard.prototype.cnds.OnKey,
 	cr.plugins_.TextBox.prototype.cnds.CompareInstanceVar,
@@ -29135,7 +29136,6 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.LocalStorage.prototype.acts.SetItem,
 	cr.plugins_.Audio.prototype.acts.SetVolume,
 	cr.plugins_.Audio.prototype.acts.Play,
-	cr.plugins_.Sprite.prototype.cnds.CompareY,
 	cr.plugins_.Sprite.prototype.acts.MoveAtAngle,
 	cr.system_object.prototype.cnds.Every,
 	cr.plugins_.Photon.prototype.acts.setPropertyOfActorByNr,

@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1621286757,
+	"version": 1621335146,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -413,12 +413,9 @@
 		"8-bit_madness-webfont.ttf",
 		"8-bit_madness-webfont.woff",
 		"eight-bit_madnessregular.css",
-		"nokia_cellphone_fcsmall.css",
-		"nokiafc22-webfont.woff",
-		"nokiafc22-webfont.woff2",
-		"8-bit_fortressregular.css",
-		"8-bit_fortress-webfont.woff",
-		"8-bit_fortress-webfont.woff2",
+		"generic_mobile_systemregular.css",
+		"genericmobilesystem-webfont.woff",
+		"genericmobilesystem-webfont.woff2",
 		"loading-logo.png",
 		"Photon-Javascript_SDK.min.js",
 		"Photon-Javascript_SDK.min.js",
