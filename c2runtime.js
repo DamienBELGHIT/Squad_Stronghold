@@ -29024,7 +29024,6 @@ cr.getObjectRefTable = function () { return [
 	cr.system_object.prototype.acts.SubVar,
 	cr.behaviors.Pathfinding.prototype.acts.FindPath,
 	cr.behaviors.Pathfinding.prototype.cnds.OnPathFound,
-	cr.plugins_.Photon.prototype.exps.MasterActorNr,
 	cr.plugins_.Sprite.prototype.acts.SetWidth,
 	cr.system_object.prototype.exps.distance,
 	cr.behaviors.Pathfinding.prototype.exps.NodeXAt,
