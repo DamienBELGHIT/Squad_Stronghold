@@ -29169,6 +29169,7 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Text.prototype.acts.SetInstanceVar,
 	cr.plugins_.PhotonChat.prototype.acts.disconnect,
 	cr.plugins_.LocalStorage.prototype.acts.GetItem,
+	cr.plugins_.LocalStorage.prototype.acts.CheckItemExists,
 	cr.plugins_.LocalStorage.prototype.cnds.OnItemExists,
 	cr.plugins_.LocalStorage.prototype.cnds.OnItemMissing,
 	cr.plugins_.LocalStorage.prototype.cnds.OnItemGet,
