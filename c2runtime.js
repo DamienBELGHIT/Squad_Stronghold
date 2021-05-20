@@ -10257,7 +10257,7 @@ window["cr_setSuspended"] = function(s)
 			this.is_else_block = (this.conditions[0].type == null && this.conditions[0].func == cr.system_object.prototype.cnds.Else);
 		}
 	};
-	window["_c2hh_"] = "FAB963D5F29A029FB1E83C31CF2B4CE6B56E5341";
+	window["_c2hh_"] = "69FBE9450CC32E554736042A54E526D202190A18";
 	EventBlock.prototype.postInit = function (hasElse/*, prevBlock_*/)
 	{
 		var i, len;
@@ -28909,19 +28909,19 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Arr,
 	cr.plugins_.Audio,
 	cr.plugins_.Browser,
-	cr.plugins_.Mouse,
+	cr.plugins_.LocalStorage,
 	cr.plugins_.Particles,
 	cr.plugins_.Function,
 	cr.plugins_.Keyboard,
-	cr.plugins_.LocalStorage,
+	cr.plugins_.Mouse,
 	cr.plugins_.PhotonChat,
-	cr.plugins_.Text,
-	cr.plugins_.Photon,
-	cr.plugins_.TextBox,
-	cr.plugins_.TiledBg,
-	cr.plugins_.sliderbar,
-	cr.plugins_.rex_bbcodeText,
 	cr.plugins_.Sprite,
+	cr.plugins_.Photon,
+	cr.plugins_.Text,
+	cr.plugins_.TextBox,
+	cr.plugins_.rex_bbcodeText,
+	cr.plugins_.sliderbar,
+	cr.plugins_.TiledBg,
 	cr.behaviors.Fade,
 	cr.behaviors.Pin,
 	cr.behaviors.Bullet,
