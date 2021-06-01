@@ -10257,7 +10257,7 @@ window["cr_setSuspended"] = function(s)
 			this.is_else_block = (this.conditions[0].type == null && this.conditions[0].func == cr.system_object.prototype.cnds.Else);
 		}
 	};
-	window["_c2hh_"] = "A0BAD3C237D83FE06F7AEA9CA16E94B07355641B";
+	window["_c2hh_"] = "EED1FF194EC9642BD2FA72EF3BD77E1116B69255";
 	EventBlock.prototype.postInit = function (hasElse/*, prevBlock_*/)
 	{
 		var i, len;
@@ -28907,21 +28907,21 @@ cr.behaviors.solid = function(runtime)
 }());
 cr.getObjectRefTable = function () { return [
 	cr.plugins_.Arr,
-	cr.plugins_.Audio,
 	cr.plugins_.Browser,
+	cr.plugins_.Audio,
+	cr.plugins_.Particles,
+	cr.plugins_.Function,
 	cr.plugins_.LocalStorage,
 	cr.plugins_.Keyboard,
 	cr.plugins_.Mouse,
-	cr.plugins_.Function,
-	cr.plugins_.Particles,
-	cr.plugins_.Text,
-	cr.plugins_.Photon,
-	cr.plugins_.sliderbar,
+	cr.plugins_.TextBox,
+	cr.plugins_.PhotonChat,
 	cr.plugins_.rex_bbcodeText,
 	cr.plugins_.Sprite,
-	cr.plugins_.TextBox,
+	cr.plugins_.sliderbar,
 	cr.plugins_.TiledBg,
-	cr.plugins_.PhotonChat,
+	cr.plugins_.Photon,
+	cr.plugins_.Text,
 	cr.behaviors.Fade,
 	cr.behaviors.Pin,
 	cr.behaviors.Bullet,
@@ -29070,8 +29070,9 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.exps.Angle,
 	cr.behaviors.Bullet.prototype.acts.SetSpeed,
 	cr.plugins_.Sprite.prototype.cnds.OnCollision,
-	cr.plugins_.Sprite.prototype.acts.SetAnimSpeed,
 	cr.plugins_.Sprite.prototype.acts.SetOpacity,
+	cr.plugins_.Sprite.prototype.acts.SetAnimSpeed,
+	cr.plugins_.Sprite.prototype.acts.SetScale,
 	cr.plugins_.Sprite.prototype.acts.MoveToTop,
 	cr.system_object.prototype.exps.max,
 	cr.system_object.prototype.exps.round,
@@ -29106,6 +29107,7 @@ cr.getObjectRefTable = function () { return [
 	cr.system_object.prototype.exps["float"],
 	cr.behaviors.Pathfinding.prototype.acts.Stop,
 	cr.plugins_.Sprite.prototype.cnds.CompareX,
+	cr.plugins_.Particles.prototype.acts.SetSpraying,
 	cr.plugins_.Mouse.prototype.cnds.OnObjectClicked,
 	cr.plugins_.Arr.prototype.acts.SetXY,
 	cr.plugins_.Sprite.prototype.acts.SetFlipped,
