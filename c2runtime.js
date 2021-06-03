@@ -10257,7 +10257,7 @@ window["cr_setSuspended"] = function(s)
 			this.is_else_block = (this.conditions[0].type == null && this.conditions[0].func == cr.system_object.prototype.cnds.Else);
 		}
 	};
-	window["_c2hh_"] = "EED1FF194EC9642BD2FA72EF3BD77E1116B69255";
+	window["_c2hh_"] = "38F26F77A27A2760AC07893B9D6A3FCFD75F8A91";
 	EventBlock.prototype.postInit = function (hasElse/*, prevBlock_*/)
 	{
 		var i, len;
@@ -28749,6 +28749,45 @@ cr.behaviors.Rex_MoveTo = function (runtime) {
 }());
 ;
 ;
+cr.behaviors.destroy = function(runtime)
+{
+	this.runtime = runtime;
+};
+(function ()
+{
+	var behaviorProto = cr.behaviors.destroy.prototype;
+	behaviorProto.Type = function(behavior, objtype)
+	{
+		this.behavior = behavior;
+		this.objtype = objtype;
+		this.runtime = behavior.runtime;
+	};
+	var behtypeProto = behaviorProto.Type.prototype;
+	behtypeProto.onCreate = function()
+	{
+	};
+	behaviorProto.Instance = function(type, inst)
+	{
+		this.type = type;
+		this.behavior = type.behavior;
+		this.inst = inst;				// associated object instance to modify
+		this.runtime = type.runtime;
+	};
+	var behinstProto = behaviorProto.Instance.prototype;
+	behinstProto.onCreate = function()
+	{
+	};
+	behinstProto.tick = function ()
+	{
+		this.inst.update_bbox();
+		var bbox = this.inst.bbox;
+		var layout = this.inst.layer.layout;
+		if (bbox.right < 0 || bbox.bottom < 0 || bbox.left > layout.width || bbox.top > layout.height)
+			this.runtime.DestroyInstance(this.inst);
+	};
+}());
+;
+;
 cr.behaviors.scrollto = function(runtime)
 {
 	this.runtime = runtime;
@@ -28907,26 +28946,27 @@ cr.behaviors.solid = function(runtime)
 }());
 cr.getObjectRefTable = function () { return [
 	cr.plugins_.Arr,
-	cr.plugins_.Browser,
 	cr.plugins_.Audio,
-	cr.plugins_.Particles,
-	cr.plugins_.Function,
-	cr.plugins_.LocalStorage,
+	cr.plugins_.Browser,
 	cr.plugins_.Keyboard,
+	cr.plugins_.Function,
 	cr.plugins_.Mouse,
-	cr.plugins_.TextBox,
-	cr.plugins_.PhotonChat,
-	cr.plugins_.rex_bbcodeText,
+	cr.plugins_.LocalStorage,
+	cr.plugins_.Particles,
 	cr.plugins_.Sprite,
 	cr.plugins_.sliderbar,
-	cr.plugins_.TiledBg,
 	cr.plugins_.Photon,
+	cr.plugins_.TextBox,
+	cr.plugins_.PhotonChat,
+	cr.plugins_.TiledBg,
 	cr.plugins_.Text,
+	cr.plugins_.rex_bbcodeText,
 	cr.behaviors.Fade,
 	cr.behaviors.Pin,
 	cr.behaviors.Bullet,
 	cr.behaviors.scrollto,
 	cr.behaviors.Rex_MoveTo,
+	cr.behaviors.destroy,
 	cr.behaviors.LOS,
 	cr.behaviors.solid,
 	cr.behaviors.Pathfinding,
@@ -29079,7 +29119,6 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Text.prototype.acts.SetPosToObject,
 	cr.plugins_.Text.prototype.acts.MoveToTop,
 	cr.plugins_.Sprite.prototype.acts.SetY,
-	cr.behaviors.solid.prototype.cnds.IsEnabled,
 	cr.plugins_.Sprite.prototype.acts.SetEffectParam,
 	cr.plugins_.Particles.prototype.acts.SetInstanceVar,
 	cr.plugins_.Particles.prototype.acts.SetAngle,
@@ -29091,6 +29130,7 @@ cr.getObjectRefTable = function () { return [
 	cr.behaviors.LOS.prototype.exps.Range,
 	cr.plugins_.Mouse.prototype.exps.X,
 	cr.plugins_.Mouse.prototype.exps.Y,
+	cr.behaviors.solid.prototype.cnds.IsEnabled,
 	cr.plugins_.Mouse.prototype.exps.AbsoluteX,
 	cr.system_object.prototype.acts.ScrollX,
 	cr.system_object.prototype.exps.scrollx,
@@ -29108,6 +29148,7 @@ cr.getObjectRefTable = function () { return [
 	cr.behaviors.Pathfinding.prototype.acts.Stop,
 	cr.plugins_.Sprite.prototype.cnds.CompareX,
 	cr.plugins_.Particles.prototype.acts.SetSpraying,
+	cr.plugins_.Sprite.prototype.acts.SetTowardPosition,
 	cr.plugins_.Mouse.prototype.cnds.OnObjectClicked,
 	cr.plugins_.Arr.prototype.acts.SetXY,
 	cr.plugins_.Sprite.prototype.acts.SetFlipped,
