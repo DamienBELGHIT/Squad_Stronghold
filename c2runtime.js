@@ -10257,7 +10257,7 @@ window["cr_setSuspended"] = function(s)
 			this.is_else_block = (this.conditions[0].type == null && this.conditions[0].func == cr.system_object.prototype.cnds.Else);
 		}
 	};
-	window["_c2hh_"] = "38F26F77A27A2760AC07893B9D6A3FCFD75F8A91";
+	window["_c2hh_"] = "A6B528AE8A90B6E1866BA22C3786CF9A3E02019B";
 	EventBlock.prototype.postInit = function (hasElse/*, prevBlock_*/)
 	{
 		var i, len;
@@ -28948,19 +28948,19 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Arr,
 	cr.plugins_.Audio,
 	cr.plugins_.Browser,
-	cr.plugins_.Keyboard,
-	cr.plugins_.Function,
 	cr.plugins_.Mouse,
 	cr.plugins_.LocalStorage,
 	cr.plugins_.Particles,
+	cr.plugins_.Function,
+	cr.plugins_.Keyboard,
+	cr.plugins_.TiledBg,
+	cr.plugins_.Photon,
 	cr.plugins_.Sprite,
 	cr.plugins_.sliderbar,
-	cr.plugins_.Photon,
-	cr.plugins_.TextBox,
 	cr.plugins_.PhotonChat,
-	cr.plugins_.TiledBg,
-	cr.plugins_.Text,
 	cr.plugins_.rex_bbcodeText,
+	cr.plugins_.Text,
+	cr.plugins_.TextBox,
 	cr.behaviors.Fade,
 	cr.behaviors.Pin,
 	cr.behaviors.Bullet,
@@ -29085,6 +29085,7 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.cnds.PickDistance,
 	cr.behaviors.Pathfinding.prototype.cnds.OnArrived,
 	cr.behaviors.Pathfinding.prototype.cnds.IsMoving,
+	cr.behaviors.Bullet.prototype.acts.SetAngleOfMotion,
 	cr.system_object.prototype.exps.ceil,
 	cr.plugins_.Sprite.prototype.acts.SubInstanceVar,
 	cr.behaviors.Pathfinding.prototype.acts.StartMoving,
@@ -29106,7 +29107,6 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.cnds.CompareFrame,
 	cr.system_object.prototype.exps.min,
 	cr.plugins_.Sprite.prototype.exps.AnimationFrameCount,
-	cr.behaviors.Bullet.prototype.acts.SetAngleOfMotion,
 	cr.plugins_.Sprite.prototype.exps.Angle,
 	cr.behaviors.Bullet.prototype.acts.SetSpeed,
 	cr.plugins_.Sprite.prototype.cnds.OnCollision,
