@@ -10257,7 +10257,7 @@ window["cr_setSuspended"] = function(s)
 			this.is_else_block = (this.conditions[0].type == null && this.conditions[0].func == cr.system_object.prototype.cnds.Else);
 		}
 	};
-	window["_c2hh_"] = "376E720EDDA08775970F11C9D1D6503E0818480B";
+	window["_c2hh_"] = "84540BFD7F7747C38870E123D04B09BCE4D7A280";
 	EventBlock.prototype.postInit = function (hasElse/*, prevBlock_*/)
 	{
 		var i, len;
@@ -28948,19 +28948,19 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Arr,
 	cr.plugins_.Audio,
 	cr.plugins_.Browser,
-	cr.plugins_.Keyboard,
+	cr.plugins_.Function,
 	cr.plugins_.LocalStorage,
+	cr.plugins_.Keyboard,
 	cr.plugins_.Mouse,
 	cr.plugins_.Particles,
-	cr.plugins_.Function,
-	cr.plugins_.sliderbar,
-	cr.plugins_.Text,
 	cr.plugins_.PhotonChat,
-	cr.plugins_.Photon,
-	cr.plugins_.Sprite,
-	cr.plugins_.TextBox,
-	cr.plugins_.rex_bbcodeText,
 	cr.plugins_.TiledBg,
+	cr.plugins_.TextBox,
+	cr.plugins_.Sprite,
+	cr.plugins_.sliderbar,
+	cr.plugins_.Photon,
+	cr.plugins_.rex_bbcodeText,
+	cr.plugins_.Text,
 	cr.behaviors.Fade,
 	cr.behaviors.Pin,
 	cr.behaviors.Bullet,
@@ -29119,7 +29119,6 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Text.prototype.acts.SetPosToObject,
 	cr.plugins_.Text.prototype.acts.MoveToTop,
 	cr.plugins_.Sprite.prototype.acts.SetY,
-	cr.plugins_.Sprite.prototype.acts.SetEffectParam,
 	cr.plugins_.Particles.prototype.acts.SetInstanceVar,
 	cr.plugins_.Particles.prototype.acts.SetAngle,
 	cr.plugins_.Particles.prototype.cnds.CompareInstanceVar,
@@ -29150,6 +29149,7 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Particles.prototype.acts.SetSpraying,
 	cr.plugins_.Sprite.prototype.acts.SetTowardPosition,
 	cr.plugins_.Mouse.prototype.cnds.OnObjectClicked,
+	cr.plugins_.Sprite.prototype.acts.SetEffectParam,
 	cr.plugins_.Arr.prototype.acts.SetXY,
 	cr.plugins_.Sprite.prototype.acts.SetFlipped,
 	cr.plugins_.Sprite.prototype.cnds.IsOutsideLayout,
