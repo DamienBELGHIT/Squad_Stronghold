@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1622982608,
+	"version": 1623064432,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -76,6 +76,7 @@
 		"images/objectivetile-sheet1.png",
 		"images/objectivetile-sheet2.png",
 		"images/fueltile-sheet0.png",
+		"images/visiontile-sheet0.png",
 		"images/shootrange-sheet0.png",
 		"images/moverange-sheet0.png",
 		"images/meleerange-sheet0.png",
@@ -738,6 +739,10 @@
 		"media/explosion.ogg",
 		"media/gaspasser.m4a",
 		"media/gaspasser.ogg",
+		"media/walk.m4a",
+		"media/walk.ogg",
+		"media/fire.m4a",
+		"media/fire.ogg",
 		"media/options.m4a",
 		"media/options.ogg",
 		"media/select.m4a",
