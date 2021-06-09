@@ -10257,7 +10257,7 @@ window["cr_setSuspended"] = function(s)
 			this.is_else_block = (this.conditions[0].type == null && this.conditions[0].func == cr.system_object.prototype.cnds.Else);
 		}
 	};
-	window["_c2hh_"] = "1A51955111AF1F8AE8177A0460ABE34C5CC249C7";
+	window["_c2hh_"] = "A6B0F637DEEA972090813E5CACBA36BB7309C18F";
 	EventBlock.prototype.postInit = function (hasElse/*, prevBlock_*/)
 	{
 		var i, len;
@@ -28948,18 +28948,18 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Arr,
 	cr.plugins_.Audio,
 	cr.plugins_.Browser,
-	cr.plugins_.LocalStorage,
-	cr.plugins_.Particles,
-	cr.plugins_.Function,
 	cr.plugins_.Keyboard,
+	cr.plugins_.Function,
+	cr.plugins_.Particles,
+	cr.plugins_.LocalStorage,
 	cr.plugins_.Mouse,
-	cr.plugins_.sliderbar,
-	cr.plugins_.TiledBg,
-	cr.plugins_.Photon,
-	cr.plugins_.Sprite,
 	cr.plugins_.Text,
-	cr.plugins_.PhotonChat,
 	cr.plugins_.TextBox,
+	cr.plugins_.TiledBg,
+	cr.plugins_.Sprite,
+	cr.plugins_.Photon,
+	cr.plugins_.PhotonChat,
+	cr.plugins_.sliderbar,
 	cr.plugins_.rex_bbcodeText,
 	cr.behaviors.Fade,
 	cr.behaviors.Pin,
@@ -29072,8 +29072,6 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.acts.SetX,
 	cr.plugins_.Sprite.prototype.acts.MoveAtAngle,
 	cr.behaviors.Pathfinding.prototype.cnds.OnFailedToFindPath,
-	cr.system_object.prototype.acts.SubVar,
-	cr.behaviors.Pathfinding.prototype.acts.FindPath,
 	cr.behaviors.Pathfinding.prototype.cnds.OnPathFound,
 	cr.plugins_.Sprite.prototype.acts.SetWidth,
 	cr.system_object.prototype.exps.distance,
@@ -29082,12 +29080,15 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.acts.SetAngle,
 	cr.system_object.prototype.exps.angle,
 	cr.behaviors.Pathfinding.prototype.exps.NodeCount,
+	cr.system_object.prototype.cnds.PickAll,
 	cr.plugins_.Sprite.prototype.cnds.PickDistance,
+	cr.system_object.prototype.acts.SubVar,
+	cr.system_object.prototype.exps.ceil,
+	cr.behaviors.Pathfinding.prototype.acts.FindPath,
 	cr.behaviors.Pathfinding.prototype.cnds.OnArrived,
 	cr.behaviors.Pathfinding.prototype.cnds.IsMoving,
 	cr.plugins_.Audio.prototype.cnds.IsTagPlaying,
 	cr.behaviors.Bullet.prototype.acts.SetAngleOfMotion,
-	cr.system_object.prototype.exps.ceil,
 	cr.plugins_.Sprite.prototype.acts.SubInstanceVar,
 	cr.behaviors.Pathfinding.prototype.acts.StartMoving,
 	cr.system_object.prototype.cnds.IsBetweenAngles,
