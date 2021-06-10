@@ -10257,7 +10257,7 @@ window["cr_setSuspended"] = function(s)
 			this.is_else_block = (this.conditions[0].type == null && this.conditions[0].func == cr.system_object.prototype.cnds.Else);
 		}
 	};
-	window["_c2hh_"] = "A6B0F637DEEA972090813E5CACBA36BB7309C18F";
+	window["_c2hh_"] = "6DA6353ADCF7BAB49462A7448303302E52F6FD73";
 	EventBlock.prototype.postInit = function (hasElse/*, prevBlock_*/)
 	{
 		var i, len;
@@ -28948,18 +28948,18 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Arr,
 	cr.plugins_.Audio,
 	cr.plugins_.Browser,
-	cr.plugins_.Keyboard,
 	cr.plugins_.Function,
-	cr.plugins_.Particles,
 	cr.plugins_.LocalStorage,
 	cr.plugins_.Mouse,
-	cr.plugins_.Text,
+	cr.plugins_.Particles,
+	cr.plugins_.Keyboard,
 	cr.plugins_.TextBox,
 	cr.plugins_.TiledBg,
 	cr.plugins_.Sprite,
-	cr.plugins_.Photon,
-	cr.plugins_.PhotonChat,
 	cr.plugins_.sliderbar,
+	cr.plugins_.Text,
+	cr.plugins_.PhotonChat,
+	cr.plugins_.Photon,
 	cr.plugins_.rex_bbcodeText,
 	cr.behaviors.Fade,
 	cr.behaviors.Pin,
@@ -29044,6 +29044,7 @@ cr.getObjectRefTable = function () { return [
 	cr.system_object.prototype.acts.SetLayerVisible,
 	cr.plugins_.Audio.prototype.acts.Stop,
 	cr.plugins_.Sprite.prototype.exps.Count,
+	cr.plugins_.Sprite.prototype.cnds.PickTopBottom,
 	cr.system_object.prototype.exps.floor,
 	cr.system_object.prototype.exps.random,
 	cr.plugins_.Sprite.prototype.cnds.OnCreated,
@@ -29182,6 +29183,7 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Photon.prototype.acts.disconnect,
 	cr.plugins_.Sprite.prototype.exps.LayerName,
 	cr.plugins_.TextBox.prototype.acts.SetEnabled,
+	cr.system_object.prototype.exps.layoutname,
 	cr.plugins_.sliderbar.prototype.cnds.CompareInstanceVar,
 	cr.plugins_.sliderbar.prototype.acts.SetValue,
 	cr.plugins_.Audio.prototype.exps.MasterVolume,

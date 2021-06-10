@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1623252431,
+	"version": 1623319372,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -40,6 +40,9 @@
 		"images/figure-sheet1.png",
 		"images/hppoint-sheet0.png",
 		"images/statsicon-sheet0.png",
+		"images/pdp-sheet0.png",
+		"images/pdp-sheet1.png",
+		"images/pdp-sheet2.png",
 		"images/selectedbox-sheet0.png",
 		"images/selectedbox-sheet1.png",
 		"images/selectedbox-sheet2.png",
