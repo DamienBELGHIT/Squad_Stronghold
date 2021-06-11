@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1623319372,
+	"version": 1623432408,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -17,8 +17,6 @@
 		"images/endturnbutton-sheet0.png",
 		"images/endturnbutton-sheet1.png",
 		"images/menubutton-sheet0.png",
-		"images/menubutton-sheet1.png",
-		"images/menubutton-sheet2.png",
 		"images/podium-sheet0.png",
 		"images/podium-sheet1.png",
 		"images/podium-sheet2.png",
@@ -115,7 +113,6 @@
 		"images/valise-sheet0.png",
 		"images/popups-sheet0.png",
 		"images/indicator-sheet0.png",
-		"images/functioninstance-sheet0.png",
 		"images/advanced-sheet0.png",
 		"images/advanced-sheet1.png",
 		"images/advanced-sheet2.png",
@@ -126,6 +123,9 @@
 		"images/stickybomb-sheet0.png",
 		"images/stickybomb-sheet1.png",
 		"images/tileview-sheet0.png",
+		"images/ai-sheet0.png",
+		"images/asfunc-sheet0.png",
+		"images/dummyicon-sheet0.png",
 		"media/heavymelee0.m4a",
 		"media/heavymelee0.ogg",
 		"media/heavymelee1.m4a",
