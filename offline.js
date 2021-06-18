@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1623432408,
+	"version": 1624006605,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -79,7 +79,6 @@
 		"images/fueltile-sheet0.png",
 		"images/visiontile-sheet0.png",
 		"images/shootrange-sheet0.png",
-		"images/moverange-sheet0.png",
 		"images/meleerange-sheet0.png",
 		"images/range-sheet0.png",
 		"images/mercenary-sheet0.png",
