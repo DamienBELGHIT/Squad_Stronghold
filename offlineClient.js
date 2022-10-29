@@ -6,7 +6,7 @@
 	{
 		constructor()
 		{
-			// Create a BroadcastChannel, if supported.
+			// Create a BroadcastChannel, if supported (dumbass).
 			this._broadcastChannel = (typeof BroadcastChannel === "undefined" ? null : new BroadcastChannel("offline"));
 			
 			// Queue of messages received before a message callback is set.
